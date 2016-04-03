@@ -1,0 +1,11 @@
+filename inc "/folders/myfolders/sasuser.v94/C2110H2R";
+
+proc cimport
+	data=jian
+	infile=inc;
+
+proc export data=jian
+    outfile='/folders/myfolders/sasuser.v94/C2110H2R.csv'
+    dbms=csv
+    replace;
+run;
